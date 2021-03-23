@@ -1,6 +1,7 @@
 def sort_key(j):
         return int(j[1])
 def ShopOLAP(N,items):
+    if N == 1: return items
     Items1 = []
     Items2 = []
     for j in items:
