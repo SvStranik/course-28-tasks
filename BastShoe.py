@@ -32,7 +32,6 @@ def undo(command,text):
         text = text[:len(text)-len(lineUndo[2:])]
     else:
         text = text + lineUndo[2:]
-    
     return text
 def redo(command,text):
     if len(command) > 1: return text
