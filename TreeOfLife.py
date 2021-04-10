@@ -15,8 +15,8 @@ def TreeOfLife(H, W, N, tree):
         i = i.replace('+','1')
         i = i.replace('.','0')
         string.append(list(i))
-    counter = 2
-    while counter - 1 != N:
+    counter = 0
+    while counter != N:
         string = branchAging(string)
         if counter % 2 != 0:
             string2 = stringCopy(string)
