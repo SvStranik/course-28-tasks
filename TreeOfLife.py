@@ -5,8 +5,8 @@ def stringCopy(string):
         string2.append(per)
     return string2
 def branchAging(string):
-    for i in range(H):
-        for j in range(W):
+    for i in range(len(string)):
+        for j in range(len(string[i])):
             string[i][j] = int(string[i][j]) + 1
     return string
 def TreeOfLife(H, W, N, tree):
