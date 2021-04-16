@@ -13,4 +13,3 @@ def MatrixTurn(Matrix,M,N,T):
             if i+1 >= M - N //2 and i+1 >= M // 2:counter -= 1
             if counter < N // 2 and  i+1 < M // 2: counter += 1   
         Matrix = resultat[:]
-    return resultat
