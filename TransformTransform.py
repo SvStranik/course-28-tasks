@@ -1,7 +1,7 @@
 def Transform(A):
     B = []
-    for i in range(len(A)-1):
-        for j in range(len(A)-i-1):
+    for i in range(len(A)):
+        for j in range(len(A)-i):
             k = i + j
             B.append(max(A[j:k+1]))
     return B
@@ -10,3 +10,4 @@ def TransformTransform(A,N):
     B = Transform(A)
     if sum(B) % 2 == 0: return True
     else: return False
+    
