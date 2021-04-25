@@ -8,4 +8,4 @@ def BalancedParentheses(N):
     if N == 1: return "()"
     S = string2(N)
     N = string1(N)
-    return N + S
+    return N +' '+ S
