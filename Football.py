@@ -1,7 +1,7 @@
 def Football(F,N):
-    resultat = True
+    resultat = False
     for i in range(len(F)-1):
-        if F[i] > F[i+1] and resultat == True:
+        if F[i] > F[i+1] and resultat == False:
             if len(F) - i == 2:
                 return True
             elif F[i+1] < F[i+2]:
@@ -16,8 +16,8 @@ def Football(F,N):
                         break
                     if len(F)-i-1 == j:
                         F[i:] = list(reversed(F[i:]))
-            resultat = False
-        if F[i] > F[i+1] and resultat == False:
+            resultat = True
+        if F[i] > F[i+1] and resultat == True:
             return False
-    return True
+    return resultat
     
