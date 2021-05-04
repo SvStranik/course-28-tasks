@@ -1,6 +1,8 @@
 def Football(F,N):
     resultat = False
-    for i in range(len(F)-1):
+    i = -1
+    while i != len(F)-2 and len(F) > 1:
+        i += 1
         if F[i] > F[i+1] and resultat == False:
             if len(F) - i == 2:
                 return True
@@ -19,6 +21,7 @@ def Football(F,N):
                 else:
                     F[i:counter+1] = list(reversed(F[i:counter+1]))                                    
             resultat = True
+            i = 0
         if F[i] > F[i+1] and resultat == True:
             return False
     return resultat
